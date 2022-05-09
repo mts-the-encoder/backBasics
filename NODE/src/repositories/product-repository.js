@@ -8,7 +8,7 @@ exports.get = async() => {
         .find({
             active: true
         }, 'title price slug');
-        return res;
+    return res;
 }
 
 exports.getBySlug = async(slug) => {
@@ -17,7 +17,7 @@ exports.getBySlug = async(slug) => {
             slug: slug,
             active: true
         }, 'title description price slug tags');
-        return res;
+    return res;
 }
 
 exports.getById = async(id) => {
@@ -31,7 +31,7 @@ exports.getByTag = async(tag) => {
             tags: tag,
             active: true
         }, 'title description price slug tags');
-        return res;
+    return res;
 }
 
 exports.create = async(data) => {
