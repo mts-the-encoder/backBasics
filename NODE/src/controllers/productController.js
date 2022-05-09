@@ -71,7 +71,6 @@ exports.post = async (req, res, next) => {
             message: 'Falha ao processar requisição'
         });
     }
-
 }
 
 exports.put = async (req, res, next) => {

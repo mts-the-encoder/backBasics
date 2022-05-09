@@ -14,6 +14,8 @@ mongoose.connect(`mongodb+srv://${user}:${passwd}@cluster0.jhaxa.mongodb.net/Dat
 
 //Models
 const Product = require('./models/product');
+const Customer = require('./models/customer');
+const Order = require('./models/order');
 
 // Routes
 const index = require('./routes/index'); 
