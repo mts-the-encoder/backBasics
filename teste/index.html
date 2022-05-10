@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    div {
+        width: 600px;
+        height: 700px;
+    }
+</style>
+<body>
+    <div>
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+</body>
+</html>
+<script>
+    // const xmlHttp = new XMLHttpRequest();
+    // xmlHttp.onreadystatechange = function () {
+    //     if(xmlHttp.readyState == 4 && xmlHttp == 200)
+    //         callback(xmlHttp.responseText);
+    // }
+    // xmlHttp.open("GET", "https://gorest.co.in/public/v2/users", true);
+    // xmlHttp.send(null);
+    
+    // async function getData() {
+    //     try {
+    //         const data = await XMLHttpRequest();
+    //         console.log(xmlHttp);
+    //     } catch (err) {
+    //         console.log(`Erro: ${err}`);
+    //     }
+    // }
+
+    getdata();
+
+    async function getdata() {
+        const url = 'https://gorest.co.in/public/v2/users';
+        const response = await fetch(url);
+        const datapoints = await response.json();
+        console.log(datapoints);
+        return datapoints;
+    }
+
+    getdata().then(datapoints => {
+        const name = datapoints.map(datapoint => {
+            return datapoint.name;
+        });
+        const genders = datapoints.map(datapoint => {
+            return datapoint.id
+        });
+        const maleCount = datapoints.filter(datapoint => datapoint.gender == 'male');
+        maleCount.forEach(datapoint => {
+            return datapoint.gender;
+        });
+        const femaleCount = datapoints.filter(datapoint => datapoint.gender == 'female');
+        maleCount.forEach(datapoint => {
+            return datapoint.gender;
+        });
+        console.log(name);
+        console.log(genders);
+        console.log(maleCount.length);
+        console.log(femaleCount.length);
+
+        
+
+        const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: name,
+        datasets: [{
+            label: '# of Votes',
+            data: genders,
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+    });
+</script>
