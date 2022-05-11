@@ -25,7 +25,7 @@ router.get('/:id', (req, res, next) => {
     mysql.getConnection((error, conn) => {
         if(error) { return res.status(500).send({ error: error }) }
         conn.query(
-            'SELECT (cpu_processo_utilizado) FROM tb_log WHERE id = ?;',
+            'SELECT (memoria_processo_utilizada) FROM tb_log WHERE id = ?;',
             [req.params.id],
             (error, result, fields) => {
                 if(error) { return res.status(500).send({ error: error }) } 
