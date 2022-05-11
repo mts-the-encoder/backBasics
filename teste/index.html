@@ -57,6 +57,12 @@
     getdata().then(datapoints => {
         const name = datapoints.map(datapoint => {
             return datapoint.name;
+        })
+    });
+
+    getdata().then(datapoints => {
+        const name = datapoints.map(datapoint => {
+            return datapoint.name;
         });
         const genders = datapoints.map(datapoint => {
             return datapoint.id

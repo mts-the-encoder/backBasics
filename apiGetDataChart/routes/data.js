@@ -4,7 +4,7 @@ const mysql = require('../mysql').pool;
 
 mysql.getConnection((error, conn) => {
     conn.query(
-        "SELECT * FROM _month"
+        "SELECT * FROM sales"
     )
 });
 
@@ -12,7 +12,7 @@ router.get('/', (req, res, next) => {
     mysql.getConnection((error, conn) => {
         if(error) { return res.status(500).send({ error: error }) }
         conn.query(
-            'SELECT * FROM _month;',
+            'SELECT * FROM sales;',
             (error, result, fields) => {
                 if(error) { return res.status(500).send({ error: error }) } 
                 return res.status(200).send(result);
@@ -26,13 +26,13 @@ router.post('/', (req, res, next) => {
     mysql.getConnection((error, conn) => {
         if(error) { return res.status(500).send({ error: error }) }
         conn.query(
-            'INSERT INTO _month (_name) VALUES (?)',
-            [req.body._name],
+            'INSERT INTO sales (sale) VALUES (?)',
+            [req.body.sale],
             (error, result, field) => {
                 conn.release();
                 if(error) { return res.status(500).send({ error: error }) }
                 res.status(201).send({
-                    message: 'Mounth create',
+                    message: 'Sale create',
                     id: result.insertId
                 });
             }
@@ -44,7 +44,7 @@ router.get('/:id', (req, res, next) => {
     mysql.getConnection((error, conn) => {
         if(error) { return res.status(500).send({ error: error }) }
         conn.query(
-            'SELECT (_name) FROM _month WHERE id = ?;',
+            'SELECT (sale) FROM sales WHERE id = ?;',
             [req.params.id],
             (error, result, fields) => {
                 if(error) { return res.status(500).send({ error: error }) } 
