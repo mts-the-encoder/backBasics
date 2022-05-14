@@ -12,7 +12,7 @@ router.get('/', (req, res, next) => {
     mysql.getConnection((error, conn) => {
         if(error) { return res.status(500).send({ error: error }) }
         conn.query(
-            'select * from tb_log where porcentagem_disco_uso > 0;',
+            'select porcentagem_disco_uso from tb_log  where porcentagem_disco_uso > 0 order by data_hora desc limit 5;',
             (error, result, fields) => {
                 if(error) { return res.status(500).send({ error: error }) } 
                 return res.status(200).send(result);
