@@ -12,7 +12,7 @@ router.get('/', (req, res, next) => {
     mysql.getConnection((error, conn) => {
         if(error) { return res.status(500).send({ error: error }) }
         conn.query(
-            'select porcentagem_memoria_ram_uso from tb_log  where porcentagem_memoria_ram_uso > 0 order by data_hora desc limit 5;',
+            'select porcentagem_memoria_ram_uso, nome_agente_ofensor_ram from tb_log  where porcentagem_memoria_ram_uso > 0 order by data_hora desc limit 5;',
             (error, result, fields) => {
                 if(error) { return res.status(500).send({ error: error }) } 
                 return res.status(200).send(result);
