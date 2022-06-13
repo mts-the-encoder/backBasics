@@ -1,0 +1,15 @@
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\cSharp_basic\bin\Debug\net6.0\cSharp_basic.exe
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\cSharp_basic\bin\Debug\net6.0\cSharp_basic.deps.json
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\cSharp_basic\bin\Debug\net6.0\cSharp_basic.runtimeconfig.json
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\cSharp_basic\bin\Debug\net6.0\cSharp_basic.dll
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\cSharp_basic\bin\Debug\net6.0\cSharp_basic.pdb
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\cSharp_basic\obj\Debug\net6.0\cSharp_basic.csproj.AssemblyReference.cache
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\cSharp_basic\obj\Debug\net6.0\cSharp_basic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\cSharp_basic\obj\Debug\net6.0\cSharp_basic.AssemblyInfoInputs.cache
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\cSharp_basic\obj\Debug\net6.0\cSharp_basic.AssemblyInfo.cs
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\cSharp_basic\obj\Debug\net6.0\cSharp_basic.csproj.CoreCompileInputs.cache
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\cSharp_basic\obj\Debug\net6.0\cSharp_basic.dll
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\cSharp_basic\obj\Debug\net6.0\refint\cSharp_basic.dll
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\cSharp_basic\obj\Debug\net6.0\cSharp_basic.pdb
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\cSharp_basic\obj\Debug\net6.0\cSharp_basic.genruntimeconfig.cache
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\cSharp_basic\obj\Debug\net6.0\ref\cSharp_basic.dll
