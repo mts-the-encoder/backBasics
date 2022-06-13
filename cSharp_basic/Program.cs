@@ -1,6 +1,9 @@
-﻿Console.WriteLine("Hello, World!");
+﻿Console.Write("Digite seu nome: ");
+string name = Console.ReadLine();
 
-int i;
-int i2 = i = 10;
-
-Console.WriteLine(i2);
+Console.WriteLine($"Olá {name}");  
+ 
+Console.Write("Digite seu ano de nascimento: ");
+int year = int.Parse(Console.ReadLine());   
+int age = 2022 - year;
+Console.WriteLine($"Sua idade é {age}");
