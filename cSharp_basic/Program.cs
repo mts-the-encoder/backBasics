@@ -2,8 +2,12 @@
     static void Main() {
         string[] names = { "mts", "matheus" };
 
-        for (int i = 0; i < 2; i++) {
-            Console.WriteLine(names[i]);
-        }
+        string name = "matheus";
+
+        Console.WriteLine(name.Length);
+        Console.WriteLine(name.EndsWith("a"));
+        Console.WriteLine(name.EndsWith("s"));
+        Console.WriteLine(name.Contains("u"));
+        Console.WriteLine(name.IndexOf("us"));
     }
 }
