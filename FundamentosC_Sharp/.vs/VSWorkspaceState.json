@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TypesVar"
   ],
-  "SelectedNode": "\\TypesVar",
+  "SelectedNode": "\\TypesVar\\NParse.cs",
   "PreviewInSolutionExplorer": false
 }
