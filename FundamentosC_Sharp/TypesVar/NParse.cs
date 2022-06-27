@@ -1,1 +1,1 @@
-int nInt = int.Parse("100");
+int numberInt = int.Parse("100");
