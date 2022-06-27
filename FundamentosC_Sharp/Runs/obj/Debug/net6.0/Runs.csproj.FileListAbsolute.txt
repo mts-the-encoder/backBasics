@@ -1,0 +1,15 @@
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Runs\bin\Debug\net6.0\Runs.exe
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Runs\bin\Debug\net6.0\Runs.deps.json
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Runs\bin\Debug\net6.0\Runs.runtimeconfig.json
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Runs\bin\Debug\net6.0\Runs.dll
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Runs\bin\Debug\net6.0\Runs.pdb
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Runs\obj\Debug\net6.0\Runs.csproj.AssemblyReference.cache
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Runs\obj\Debug\net6.0\Runs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Runs\obj\Debug\net6.0\Runs.AssemblyInfoInputs.cache
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Runs\obj\Debug\net6.0\Runs.AssemblyInfo.cs
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Runs\obj\Debug\net6.0\Runs.csproj.CoreCompileInputs.cache
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Runs\obj\Debug\net6.0\Runs.dll
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Runs\obj\Debug\net6.0\refint\Runs.dll
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Runs\obj\Debug\net6.0\Runs.pdb
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Runs\obj\Debug\net6.0\Runs.genruntimeconfig.cache
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Runs\obj\Debug\net6.0\ref\Runs.dll

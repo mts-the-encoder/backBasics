@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\TypesVar"
+    "\\First\\bin",
+    "\\First\\obj",
+    "\\Runs"
   ],
-  "SelectedNode": "\\TypesVar\\NParse.cs",
+  "SelectedNode": "\\Runs\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

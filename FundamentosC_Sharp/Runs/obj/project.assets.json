@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mnsantos4\\Desktop\\diretórios\\back\\BACK\\backBasics\\FundamentosC_Sharp\\First\\Teste.csproj",
-      "projectName": "Teste",
-      "projectPath": "C:\\Users\\mnsantos4\\Desktop\\diretórios\\back\\BACK\\backBasics\\FundamentosC_Sharp\\First\\Teste.csproj",
+      "projectUniqueName": "C:\\Users\\mnsantos4\\Desktop\\diretórios\\back\\BACK\\backBasics\\FundamentosC_Sharp\\Runs\\Runs.csproj",
+      "projectName": "Runs",
+      "projectPath": "C:\\Users\\mnsantos4\\Desktop\\diretórios\\back\\BACK\\backBasics\\FundamentosC_Sharp\\Runs\\Runs.csproj",
       "packagesPath": "C:\\Users\\mnsantos4\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mnsantos4\\Desktop\\diretórios\\back\\BACK\\backBasics\\FundamentosC_Sharp\\First\\obj\\",
+      "outputPath": "C:\\Users\\mnsantos4\\Desktop\\diretórios\\back\\BACK\\backBasics\\FundamentosC_Sharp\\Runs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,5 @@
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\First\obj\Debug\net6.0\Teste.csproj.AssemblyReference.cache
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\First\obj\Debug\net6.0\Teste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\First\obj\Debug\net6.0\Teste.AssemblyInfoInputs.cache
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\First\obj\Debug\net6.0\Teste.AssemblyInfo.cs
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\First\obj\Debug\net6.0\Teste.csproj.CoreCompileInputs.cache
