@@ -1,0 +1,15 @@
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\conditional\obj\Debug\net6.0\conditional.csproj.AssemblyReference.cache
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\conditional\obj\Debug\net6.0\conditional.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\conditional\obj\Debug\net6.0\conditional.AssemblyInfoInputs.cache
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\conditional\obj\Debug\net6.0\conditional.AssemblyInfo.cs
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\conditional\obj\Debug\net6.0\conditional.csproj.CoreCompileInputs.cache
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Conditional\bin\Debug\net6.0\conditional.exe
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Conditional\bin\Debug\net6.0\conditional.deps.json
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Conditional\bin\Debug\net6.0\conditional.runtimeconfig.json
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Conditional\bin\Debug\net6.0\conditional.dll
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Conditional\bin\Debug\net6.0\conditional.pdb
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Conditional\obj\Debug\net6.0\conditional.dll
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Conditional\obj\Debug\net6.0\refint\conditional.dll
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Conditional\obj\Debug\net6.0\conditional.pdb
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Conditional\obj\Debug\net6.0\conditional.genruntimeconfig.cache
+C:\Users\mnsantos4\Desktop\diretórios\back\BACK\backBasics\FundamentosC_Sharp\Conditional\obj\Debug\net6.0\ref\conditional.dll
