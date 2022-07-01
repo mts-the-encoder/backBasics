@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SStructs"
   ],
-  "SelectedNode": "\\Loops",
+  "SelectedNode": "\\SStructs\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
