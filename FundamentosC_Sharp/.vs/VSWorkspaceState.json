@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\StopWatch"
   ],
-  "SelectedNode": "\\LP_CSharp",
+  "SelectedNode": "\\StopWatch\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
