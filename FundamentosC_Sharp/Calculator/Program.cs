@@ -6,6 +6,11 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
+            Sum();
+        }
+
+        static void Sum()
+        {
             Console.Clear();
             
             Console.WriteLine("Primeiro valor: ");
@@ -18,7 +23,7 @@ namespace Calculator
 
             float result = valueOne + valueTwo;
             Console.WriteLine($"O resultado da soma é: {result}");
-        } 
+        }
     }
 }
 
