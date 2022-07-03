@@ -18,10 +18,30 @@ namespace Calculator
             Console.WriteLine("2 - Subtração");
             Console.WriteLine("3 - Divisão");
             Console.WriteLine("4 - Multiplicação");
+            Console.WriteLine("5 - Sair");
 
             Console.WriteLine("-----------------------------");
             Console.WriteLine("Selecione uma opção: ");
+
             short res = short.Parse(Console.ReadLine());
+
+            Console.WriteLine("Obrigado!");
+
+            switch (res)
+            {
+                case 1: Sum();
+                    break;
+                case 2: Subtraction();
+                    break;
+                case 3: Division();
+                    break;
+                case 4: Multiplication();
+                    break;
+                case 5:  System.Environment.Exit(0);
+                    break;
+                default: Menu();
+                    break;
+            }
 
         }
 
@@ -41,6 +61,7 @@ namespace Calculator
             Console.WriteLine($"O resultado da Soma é: {result}");
 
             Console.ReadKey();
+            Menu();
         }
 
         static void Subtraction()
@@ -59,6 +80,7 @@ namespace Calculator
             Console.WriteLine($"O resultado da Subtração é {result}");
 
             Console.ReadKey();
+            Menu();
         }
 
         static void Division()
@@ -77,6 +99,7 @@ namespace Calculator
             Console.WriteLine($"O resultado da Divisão é: {result}");
 
             Console.ReadKey();
+            Menu();
         }
 
         static void Multiplication()
@@ -95,6 +118,7 @@ namespace Calculator
             Console.WriteLine($"O resultado da Multiplicação é: {result}");
 
             Console.ReadKey();
+            Menu();
         }
     }
 }
