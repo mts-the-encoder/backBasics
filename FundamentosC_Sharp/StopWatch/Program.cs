@@ -12,6 +12,7 @@ namespace StopWatch
         static void Menu()
         {
             Console.Clear();
+
             Console.WriteLine("S = Segundos => 10s = 10 segundos");
             Console.WriteLine("M = Minutos => 1m = 1 minuto");
             Console.WriteLine("0 = Sair");
@@ -32,10 +33,25 @@ namespace StopWatch
             {
                 System.Environment.Exit(0);
             }
-            PreStart(time * multiplier);
+
+            Console.WriteLine("CronomÊtro progressivo = p");
+            Console.WriteLine("CronomÊtro regressivo = r");
+
+            string counter = Console.ReadLine().ToLower();
+
+            if (counter.Contains("p"))
+            {
+                Console.WriteLine("Progressivo");
+                PreStartP(time);
+            }
+            else
+            {
+                Console.WriteLine("Regressivo");
+                PreStartR(time);
+            }
         }
 
-        static void PreStart(int time)
+        static void PreStartP(int time)
         {
             Console.Clear();
             Console.WriteLine("Ready...");
@@ -45,10 +61,23 @@ namespace StopWatch
             Console.WriteLine("Go...");
             Thread.Sleep(2500);
 
-            Start(time);
+            StartP(time);
         }
 
-        static void Start(int time)
+        static void PreStartR(int time)
+        {
+            Console.Clear();
+            Console.WriteLine("Ready...");
+            Thread.Sleep(1000);
+            Console.WriteLine("Set...");
+            Thread.Sleep(1000);
+            Console.WriteLine("Go...");
+            Thread.Sleep(2500);
+
+            StartR(time);
+        }
+
+        static void StartP(int time)
         {
             int currentTime = 0;
 
@@ -58,6 +87,21 @@ namespace StopWatch
                 currentTime++;
 
                 Console.WriteLine(currentTime);
+                Thread.Sleep(1000);
+            }
+
+            Console.Clear();
+            Console.WriteLine("Stopwatch finalizado.");
+            Thread.Sleep(2500);
+            Menu();
+        }
+
+        static void StartR(int time)
+        {
+            for (int i = 0; i < time; time--)
+            {
+                Console.Clear();
+                Console.WriteLine(time);
                 Thread.Sleep(1000);
             }
 
