@@ -6,7 +6,7 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            var text = "test, this Is A tEst";
+            var text = "   test, this Is A tEst   ";
             //Console.WriteLine(text.CompareTo("test"));
             //Console.WriteLine(text.CompareTo("tesT"));
             //Console.WriteLine(text.Contains("tesT"));
@@ -29,15 +29,31 @@ namespace MyApp
             //Console.WriteLine(text.EndsWith("ST", StringComparison.OrdinalIgnoreCase));
 
             //Index
-            Console.WriteLine(text.IndexOf(","));
-            Console.WriteLine(text.IndexOf("h"));
+            //Console.WriteLine(text.IndexOf(","));
+            //Console.WriteLine(text.IndexOf("h"));
 
             //LowerUpper
-            Console.WriteLine(text.ToLower());
-            Console.WriteLine(text.ToUpper());
-            Console.WriteLine(text.Insert(5, " HERE "));
-            Console.WriteLine(text.Remove(10, 3));
-            Console.WriteLine(text.Length);
+            //Console.WriteLine(text.ToLower());
+            //Console.WriteLine(text.ToUpper());
+            //Console.WriteLine(text.Insert(5, " HERE "));
+            //Console.WriteLine(text.Remove(10, 3));
+            //Console.WriteLine(text.Length);
+
+            Console.WriteLine(text.Replace("this", "isto"));
+            Console.WriteLine(text.Replace("e", "x"));
+            Console.WriteLine(text.Replace("x", "zzzzzzzzzzz"));
+
+            var division = text.Split(" ");
+            Console.WriteLine(division[0]);
+            Console.WriteLine(division[1]);
+            Console.WriteLine(division[2]);
+            Console.WriteLine(division[3]);
+            Console.WriteLine(division[4]);
+
+            var result = text.Substring(6, 5);
+            Console.WriteLine(result);
+
+            Console.WriteLine(text.Trim());
         }
 
     }
