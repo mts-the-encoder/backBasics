@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Strings",
-    "\\Strings\\GUIDS"
+    "\\Strings\\Interpolacao"
   ],
-  "SelectedNode": "\\Strings\\GUIDS\\Program.cs",
+  "SelectedNode": "\\Strings\\Interpolacao\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
