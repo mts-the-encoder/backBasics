@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\StopWatch"
+    "\\Strings",
+    "\\Strings\\GUIDS"
   ],
-  "SelectedNode": "\\StopWatch\\Program.cs",
+  "SelectedNode": "\\Strings\\GUIDS\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
