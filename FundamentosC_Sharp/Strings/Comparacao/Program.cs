@@ -6,7 +6,7 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            var text = "test, this is a test";
+            var text = "test, this Is A tEst";
             //Console.WriteLine(text.CompareTo("test"));
             //Console.WriteLine(text.CompareTo("tesT"));
             //Console.WriteLine(text.Contains("tesT"));
@@ -32,6 +32,12 @@ namespace MyApp
             Console.WriteLine(text.IndexOf(","));
             Console.WriteLine(text.IndexOf("h"));
 
+            //LowerUpper
+            Console.WriteLine(text.ToLower());
+            Console.WriteLine(text.ToUpper());
+            Console.WriteLine(text.Insert(5, " HERE "));
+            Console.WriteLine(text.Remove(10, 3));
+            Console.WriteLine(text.Length);
         }
 
     }
