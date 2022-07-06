@@ -12,6 +12,8 @@ namespace HtmlEditor
 
             DrawScreen();
             WriteOptions();
+
+            var option = short.Parse(Console.ReadLine());
         }
 
         public static void DrawScreen()
@@ -52,7 +54,6 @@ namespace HtmlEditor
 
         public static void WriteOptions()
         {
-            
             Console.SetCursorPosition(3, 0);
             Console.WriteLine("1 - Novo arquivo");
 
@@ -63,7 +64,7 @@ namespace HtmlEditor
             Console.WriteLine("0 - Sair");
             
             Console.SetCursorPosition(3, 3);
-            Console.WriteLine("Opção: ");
+            Console.Write("Opção: ");
         }
     }
 }
