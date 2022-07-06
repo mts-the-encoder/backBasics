@@ -11,6 +11,7 @@ namespace HtmlEditor
             Console.ForegroundColor = ConsoleColor.Black;
 
             DrawScreen();
+            WriteOptions();
         }
 
         public static void DrawScreen()
@@ -22,10 +23,10 @@ namespace HtmlEditor
             DrawLine();
         }
 
-        static void DrawLine()
+        public static void DrawLine()
         {
             Console.Write("+");
-            for (int i = 0; i <= 30; i++)
+            for (int i = 0; i <= 20; i++)
             {
                 Console.Write("-");
             }
@@ -34,12 +35,12 @@ namespace HtmlEditor
             Console.Write("\n");
         }
 
-        static void DrawSpace()
+        public static void DrawSpace()
         {
-            for (int lines = 0; lines <= 10; lines++)
+            for (int lines = 0; lines <= 3; lines++)
             {
                 Console.Write("|");
-                for (int i = 0; i <= 30; i++)
+                for (int i = 0; i <= 20; i++)
                 {
                     Console.Write(" ");
                 }
@@ -47,6 +48,22 @@ namespace HtmlEditor
                 Console.Write("|");
                 Console.Write("\n");
             }
+        }
+
+        public static void WriteOptions()
+        {
+            
+            Console.SetCursorPosition(3, 0);
+            Console.WriteLine("1 - Novo arquivo");
+
+            Console.SetCursorPosition(3, 1);
+            Console.WriteLine("2 - Abrir");
+
+            Console.SetCursorPosition(3, 2);
+            Console.WriteLine("0 - Sair");
+            
+            Console.SetCursorPosition(3, 3);
+            Console.WriteLine("Opção: ");
         }
     }
 }
