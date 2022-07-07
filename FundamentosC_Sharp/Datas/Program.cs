@@ -6,8 +6,13 @@ namespace Datas
     {
         static void Main(string[] args)
         {
-            var data = DateTime.Now;
+            Console.Clear();
+            //var data = DateTime.Now;
+            var data = new DateTime(2022, 7, 7, 00, 10, 20);
             Console.WriteLine(data.ToString());
+            Console.WriteLine(data.Year);
+
+            Console.WriteLine(data.DayOfYear);
         }
     }
 }
