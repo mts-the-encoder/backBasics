@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Datas"
+    "\\Exceptions",
+    "\\Strings\\Comparacao",
+    "\\Strings\\GUIDS"
   ],
-  "SelectedNode": "\\Datas\\Program.cs",
+  "SelectedNode": "\\Exceptions\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

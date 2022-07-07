@@ -10,10 +10,9 @@ namespace Exceptions
 
             try
             {
-                for (int i = 0; i < 10; i++)
-                {
-                    Console.WriteLine(arr[i]);
-                }
+
+
+                Register("");
             }
             catch (IndexOutOfRangeException ex)
             {
@@ -21,12 +20,26 @@ namespace Exceptions
                 Console.WriteLine(ex.InnerException);
                 Console.WriteLine("Indice não encontrado na lista");
             }
+            catch (ArgumentNullException ex)
+            {
+                Console.Write(ex.Message);
+                Console.WriteLine(ex.InnerException);
+                Console.WriteLine("Falha ao cadastrar");
+            }
             catch (Exception e)
             {
                 Console.WriteLine(e.InnerException);
                 //Console.WriteLine(e.Message);
                 System.Console.WriteLine("algo deu errado");
                 throw;
+            }
+        }
+
+        private static void Register(string text)
+        {
+            if (string.IsNullOrEmpty(text))
+            {
+                throw new ArgumentNullException("O texto não pode ser nulo ou vazio");
             }
         }
     }
