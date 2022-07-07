@@ -10,18 +10,13 @@ namespace DotnetLists
             Console.Clear();
 
             //var myArray = new int[5];
-            int[] myArray = new int[] { new Test() };
+            int[] myArray = new int[] { 15, 21, 32, 44, 50 };
 
-            Console.WriteLine(myArray[0].Id);
-            Console.WriteLine(myArray[1]);
-            Console.WriteLine(myArray[2]);
-            Console.WriteLine(myArray[3]);
-            Console.WriteLine(myArray[4]);
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                Console.WriteLine(myArray[i]);
+            }
+            
         }
     }
-}
-
-struct Test
-{
-    public int Id { get; set; }
 }
