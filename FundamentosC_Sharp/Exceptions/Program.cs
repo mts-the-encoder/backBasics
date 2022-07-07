@@ -15,6 +15,12 @@ namespace Exceptions
                     Console.WriteLine(arr[i]);
                 }
             }
+            catch (IndexOutOfRangeException ex)
+            {
+                Console.Write(ex.Message);
+                Console.WriteLine(ex.InnerException);
+                Console.WriteLine("Indice não encontrado na lista");
+            }
             catch (Exception e)
             {
                 Console.WriteLine(e.InnerException);
