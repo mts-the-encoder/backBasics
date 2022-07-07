@@ -10,14 +10,36 @@ namespace Datas
             Console.Clear();
             var data = DateTime.UtcNow;
 
-            var timeZones = TimeZoneInfo.GetSystemTimeZones();
-            foreach (var timezone in timeZones)
-            {
-                Console.WriteLine(timezone.Id);
-                Console.WriteLine(timezone);
-                Console.WriteLine(TimeZoneInfo.ConvertTimeFromUtc(data, timezone));
-                Console.WriteLine("------------------");
-            }
+            var timeSpan = new TimeSpan();
+            Console.WriteLine(timeSpan);
+
+            var timeSpanNanoSeconds = new TimeSpan(13, 14, 23);
+            Console.WriteLine(timeSpanNanoSeconds);
+
+            // var timeSpanNanosegundos = new TimeSpan(1);
+            // Console.WriteLine(timeSpanNanosegundos);
+
+            // var timeSpanHoraMinutoSegundo = new TimeSpan(5, 12, 8);
+            // Console.WriteLine(timeSpanHoraMinutoSegundo);
+
+            // var timeSpanDiaHoraMinutoSegundo = new TimeSpan(3, 5, 50, 10);
+            // Console.WriteLine(timeSpanDiaHoraMinutoSegundo);
+
+            // var timeSpanDiaHoraMinutoSegundoMilissegundo = new TimeSpan(15, 12, 55, 8, 100);
+            // Console.WriteLine(timeSpanDiaHoraMinutoSegundoMilissegundo);
+
+            // Console.WriteLine(timeSpanHoraMinutoSegundo - timeSpanDiaHoraMinutoSegundo);
+            // Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Days);
+            // Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Add(new TimeSpan(12, 0, 0)));
+
+            //var timeZones = TimeZoneInfo.GetSystemTimeZones();
+            //foreach (var timezone in timeZones)
+            //{
+            //Console.WriteLine(timezone.Id);
+            //Console.WriteLine(timezone);
+            //Console.WriteLine(TimeZoneInfo.ConvertTimeFromUtc(data, timezone));
+            //Console.WriteLine("------------------");
+            //}
 
 
             //Console.WriteLine(data);
