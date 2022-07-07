@@ -33,6 +33,10 @@ namespace Exceptions
                 System.Console.WriteLine("algo deu errado");
                 throw;
             }
+            finally
+            {
+                Console.WriteLine("chegou ao fim");
+            }
         }
 
         private static void Register(string text)
