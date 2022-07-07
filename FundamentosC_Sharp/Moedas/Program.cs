@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Numbers
 {
@@ -6,8 +7,14 @@ namespace Numbers
     {
         static void Main(string[] args)
         {
+            Console.Clear();
+
             decimal value = 10.25m;
-            Console.WriteLine(value);
+            Console.WriteLine(value.ToString(
+                //P, porcentagem. F
+                "C",
+                CultureInfo.CreateSpecificCulture("pt-BR")));
+
         }
     }
 }
