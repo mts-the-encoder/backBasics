@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Exceptions",
-    "\\Strings\\Comparacao",
-    "\\Strings\\GUIDS"
+    "\\Exceptions"
   ],
   "SelectedNode": "\\Exceptions\\Program.cs",
   "PreviewInSolutionExplorer": false
