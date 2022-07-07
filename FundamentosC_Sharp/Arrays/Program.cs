@@ -16,12 +16,22 @@ namespace DotnetLists
             //{
                 //Console.WriteLine(myArray[i]);
             //}
+            var funcs = new Func[1];
+            funcs[0] = new Func() { Id = 13, Name = "matheus" };
 
-            foreach (var item in myArray)
+            foreach (var func in funcs)
             {
-                Console.WriteLine(item);
+                Console.WriteLine(func.Id);
+                Console.WriteLine(func.Name);
             }
             
         }
     }
+}
+
+public struct Func
+{
+    public int Id { get; set; }
+
+    public string Name { get; set; }
 }
