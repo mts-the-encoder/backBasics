@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\HTMLEditor",
-    "\\Strings\\Interpolacao"
+    "\\Datas"
   ],
-  "SelectedNode": "\\HTMLEditor\\Program.cs",
+  "SelectedNode": "\\Datas\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

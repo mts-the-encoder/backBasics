@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Datas
 {
@@ -21,12 +22,16 @@ namespace Datas
             //Console.Write(data.AddMonths(1));
             //Console.WriteLine(data.AddYears(1));
 
-            if (data.Date == DateTime.Now.Date)
-            {
-                Console.WriteLine("è igual");
-            }
+            //if (data.Date == DateTime.Now.Date)
+            //{
+            //    Console.WriteLine("è igual");
+            //}
 
-            Console.WriteLine(data);
+            //Console.WriteLine(data);
+            //var current = CultureInfo.CurrentCulture;
+
+            var pt = new CultureInfo("pt-BR");
+            Console.WriteLine(DateTime.Now.ToString("f", pt));
 
         }
     }
