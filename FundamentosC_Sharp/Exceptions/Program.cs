@@ -42,5 +42,10 @@ namespace Exceptions
                 throw new ArgumentNullException("O texto não pode ser nulo ou vazio");
             }
         }
+
+        public class MyException : Exception
+        {
+            public DateTime WhenHappened { get; set; } 
+        }
     }
 }
