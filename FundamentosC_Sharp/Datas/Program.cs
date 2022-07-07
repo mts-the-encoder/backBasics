@@ -13,9 +13,16 @@ namespace Datas
             //var formatt = String.Format("{0:t}", data);
             //var formatt = String.Format("{0:D}", data);
             //var formatt = String.Format("{0:f}", data);
-            var formatt = String.Format("{0:r}", data);
-            var format = $"{data}";
-            Console.WriteLine(formatt);
+            //var formatt = String.Format("{0:r}", data);
+            //var format = $"{data}";
+            //Console.WriteLine(formatt);
+
+            Console.WriteLine(data.AddDays(12));
+
+            Console.Write(data.AddMonths(1));
+
+            Console.WriteLine(data.AddYears(1));
+
         }
     }
 }
