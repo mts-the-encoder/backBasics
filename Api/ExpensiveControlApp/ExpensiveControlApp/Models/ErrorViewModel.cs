@@ -1,4 +1,4 @@
-namespace ASPNETMVCCRUD.Models
+namespace ExpensiveControlApp.Models
     {
     public class ErrorViewModel
         {

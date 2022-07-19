@@ -1,8 +1,8 @@
-﻿using ASPNETMVCCRUD.Models;
+﻿using ExpensiveControlApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace ASPNETMVCCRUD.Controllers
+namespace ExpensiveControlApp.Controllers
     {
     public class HomeController : Controller
         {
