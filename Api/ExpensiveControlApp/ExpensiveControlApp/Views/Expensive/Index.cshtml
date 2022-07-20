@@ -15,10 +15,10 @@
         <a asp-action="Create" asp-controller="Expensive" class="btn btn-primary btn-lg
             btn-block">Nova despesa</a>
     </div>
-</div><br/><br/>
+</div><br/>
 
 <form method="post">
-    <div asp-validation-summary="All" class="text-danger">
+    <div asp-validation-summary="All" class="text-danger"></div>
         <div class="row">
             <div class="col-md-4">
                 <div class="form-group">
@@ -36,7 +36,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </form>
 
 <div class="row">
@@ -58,7 +57,7 @@
                          <tr>
                              <td>@item.Id</td>
                              <td>@item.Description</td>
-                             <td>@item.Date</td>
+                             <td>@item.Date.ToString("dd/MM/yyyy")</td>
                              <td>@item.Value</td>
                          </tr>
                      }

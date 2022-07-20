@@ -53,6 +53,23 @@ namespace ExpensiveControlApp.Controllers
             return View(createtExpensiveDto);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(CreateExpensiveDTO createExpensiveDto)
+        {
+            try
+            {
+                await _expensiveServices.Create(createExpensiveDto);
+
+                return RedirectToAction("Index");
+            }
+            catch (Exception e)
+            {
+                ModelState.AddModelError("CustomError", e.Message);
+                return View(createExpensiveDto);
+            }
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
