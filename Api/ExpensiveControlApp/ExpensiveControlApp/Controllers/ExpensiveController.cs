@@ -1,6 +1,7 @@
 ﻿using ExpensiveControlApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using ExpensiveControlApp.DTOs;
 using ExpensiveControlApp.Services;
 
 namespace ExpensiveControlApp.Controllers
@@ -14,11 +15,42 @@ namespace ExpensiveControlApp.Controllers
             IExpensiveServices expensiveServices)
         {
             _logger = logger;
+            _expensiveServices = expensiveServices;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var listExpensiveDto = new ListExpensiveDTO();
+
+            listExpensiveDto.Items = await _expensiveServices.FindBy(listExpensiveDto.StartDate,
+                listExpensiveDto.EndDate);
+
+            return View(listExpensiveDto);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Index(ListExpensiveDTO listExpensiveDto)
+        {
+            try
+            {
+                listExpensiveDto.Items = await _expensiveServices.FindBy(listExpensiveDto.StartDate,
+                    listExpensiveDto.EndDate);
+
+                return View(listExpensiveDto);
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("CustomError", ex.Message);
+                return View(listExpensiveDto);
+
+            }
+        }
+
+        public async Task<IActionResult> Create()
+        {
+            var createtExpensiveDto = new CreateExpensiveDTO(); 
+
+            return View(createtExpensiveDto);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

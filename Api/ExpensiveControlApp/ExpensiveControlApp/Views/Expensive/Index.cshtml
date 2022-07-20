@@ -1,8 +1,73 @@
-﻿@{
+﻿@model ExpensiveControlApp.DTOs.ListExpensiveDTO
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row">
+    <div class="col-sm">
+        <h1>Despesas</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <a asp-action="Create" asp-controller="Expensive" class="btn btn-primary btn-lg
+            btn-block">Nova despesa</a>
+    </div>
+</div><br/><br/>
+
+<form method="post">
+    <div asp-validation-summary="All" class="text-danger">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input asp-for="StartDate" type="date" placeholder="Digite a Data Inicial" class="form-control"/>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input asp-for="EndDate" type="date" placeholder="Digite a Data Final" class="form-control"/>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div class="row">
+    <div class="md">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Descrição</th>
+                <th>Data</th>
+                <th>Valor</th>
+            </tr>
+            </thead>
+            <tbody>
+                 @if (Model.Items.Count > 0)
+                 {
+                     foreach (var item in Model.Items)
+                     {
+                         <tr>
+                             <td>@item.Id</td>
+                             <td>@item.Description</td>
+                             <td>@item.Date</td>
+                             <td>@item.Value</td>
+                         </tr>
+                     }
+                 }
+                 else
+                 {
+                     <tr><td colspan="3">Nenhum fo registro encontrado</td></tr>
+                 }
+            </tbody>
+        </table>
+    </div>
 </div>
